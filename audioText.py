@@ -5,7 +5,8 @@ import time
 r = sr.Recognizer()
 
 # content in AudioFile is editable!.
-with sr.AudioFile('C:\\Users\\mati12\\Music\\WhatsApp Ptt 2020-07-20 at 00.33.48.wav') as source:
+with sr.AudioFile('') as source: # enter audio file with .wav extension
+
     audio = r.listen(source)
 
     try:
